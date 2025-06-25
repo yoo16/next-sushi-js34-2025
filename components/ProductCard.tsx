@@ -18,7 +18,9 @@ export default function ProductCard({ product, onOrder }: Props) {
             onClick={onOrder}
         >
             <div className="w-32 h-32 flex items-center justify-center mb-2 relative">
-                商品画像
+                <img src={product.image_path} alt=""
+                        className="w-32"
+                />
             </div>
 
             <div className="text-center">
