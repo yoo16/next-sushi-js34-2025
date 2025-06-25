@@ -82,6 +82,7 @@ export default function HomePage() {
                     onComplete={onComplete}
                 />
             )}
+            {/* タイトルリンク */}
             <TitleLink />
             {/* 設定 */}
             <div className="flex justify-end items-center m-3">
