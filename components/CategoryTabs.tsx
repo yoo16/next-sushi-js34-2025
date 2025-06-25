@@ -14,7 +14,8 @@ export default function CategoryTabs({ categories, current, onSelect }: Props) {
             {categories.map((cat) => (
                 <button
                     className={`flex-1 px-4 py-2 rounded m-1 transition cursor-pointer bg-sky-600 text-white`}
-                >カテゴリ1
+                >
+                    {cat.name}
                 </button>
             ))}
         </div>
