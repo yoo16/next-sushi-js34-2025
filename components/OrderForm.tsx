@@ -38,7 +38,7 @@ export default function Modal({ product, onClose, onConfirm }: Props) {
     return (
         // TODO: モーダルウィンドウ化
         // className="fixed inset-0 bg-white bg-opacity-90 flex justify-center z-50"
-        <div className="">
+        <div className="fixed inset-0 bg-white bg-opacity-90 flex justify-center z-50">
             <div>
                 <TitleLink />
                 <div className="bg-white p-6">
