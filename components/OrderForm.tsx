@@ -13,6 +13,7 @@ type Props = {
 
 export default function Modal({ product, onClose, onConfirm }: Props) {
     const [quantity, setQuantity] = useState(1);
+    const priceWithTax = Math.round(product.price * 1.1);
 
     if (!product) return null;
 
@@ -41,9 +42,11 @@ export default function Modal({ product, onClose, onConfirm }: Props) {
             <div>
                 <TitleLink />
                 <div className="bg-white p-6">
-                    <h2 className="text-xl font-bold mb-2 text-center">商品名</h2>
-                    商品画像
-                    <p className="text-center mb-4">価格: 000円（税込: 000円)</p>
+                    <h2 className="text-xl font-bold mb-2 text-center">{product.name}</h2>
+                    <div className="flex justify-center mb-4">
+                        <img src={product.image_path} alt="" />
+                    </div>
+                    <p className="text-center mb-4">価格: {product.price}円（税込: {priceWithTax}円)</p>
 
                     {/* 🔢 数量調整 */}
                     <div className="flex justify-center items-center gap-4 mb-6">
