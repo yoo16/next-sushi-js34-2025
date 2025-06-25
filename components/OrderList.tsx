@@ -16,12 +16,14 @@ export default function OrderList({ orders, onCheckout }: Props) {
             <h2 className="text-center text-xl font-semibold mb-2">注文履歴</h2>
             <ul className="mb-4 space-y-1 max-h-64 overflow-y-auto">
                 {orders.map((order, index) => (
-                    <li key={order.id} className="flex justify-start items-center mb-2">
-                        <div>商品画像1</div>
-                        <div className="font-bold">商品名1</div>
+                    <li key={index} className="flex justify-start items-center mb-2">
+                        <div>
+                            <img src={order.image_path} alt="" className="w-12 mr-2"/>
+                        </div>
+                        <div className="font-bold">{order.name}</div>
                         <span className="ml-auto px-3 py-1 text-white bg-green-500 rounded">1</span>
                     </li>
-                    )
+                )
                 )}
             </ul>
             <div className="my-4 text-right text-md font-semibold">
