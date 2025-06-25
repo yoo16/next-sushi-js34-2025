@@ -21,7 +21,9 @@ export default function OrderList({ orders, onCheckout }: Props) {
                             <img src={order.image_path} alt="" className="w-12 mr-2"/>
                         </div>
                         <div className="font-bold">{order.name}</div>
-                        <span className="ml-auto px-3 py-1 text-white bg-green-500 rounded">1</span>
+                        <span className="ml-auto px-3 py-1 text-white bg-green-500 rounded-full">
+                            {order.quantity}
+                        </span>
                     </li>
                 )
                 )}
