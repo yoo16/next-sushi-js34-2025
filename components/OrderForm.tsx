@@ -33,7 +33,9 @@ export default function Modal({ product, onClose, onConfirm }: Props) {
 
         // TODO: 音声ファイルの読み込みと再生
         const defaultVoice = voices[0].file; // デフォルトの音声ファイル
-        const voiceFile = defaultVoice; // ここで選択された音声ファイルを取得
+        // ローカルストレージから音声ファイルを取得
+        // なければデフォルトの音声を使用
+        const voiceFile = localStorage.getItem("voice") || defaultVoice;
         const audio = new Audio(`/audio/${voiceFile}`);
         audio.play();
     };
