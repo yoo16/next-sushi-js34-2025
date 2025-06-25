@@ -4,6 +4,7 @@ import { useState } from "react";
 import { Product } from "@/types/Product";
 import { Order } from "@/types/Order";
 import TitleLink from "./TitleLink";
+import { voices } from "@/lib/voiceOptions";
 
 type Props = {
     product: Product;
@@ -31,7 +32,10 @@ export default function Modal({ product, onClose, onConfirm }: Props) {
         onClose();
 
         // TODO: 音声ファイルの読み込みと再生
-
+        const defaultVoice = voices[0].file; // デフォルトの音声ファイル
+        const voiceFile = defaultVoice; // ここで選択された音声ファイルを取得
+        const audio = new Audio(`/audio/${voiceFile}`);
+        audio.play();
     };
 
 
