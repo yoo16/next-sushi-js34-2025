@@ -1,0 +1,176 @@
+{
+    "status": "success",
+    "products": [
+        {
+            "id": 1,
+            "name": "まぐろ",
+            "price": 100,
+            "image_path": "images\/products\/maguro.png",
+            "category_id": 1,
+            "created_at": "2025-06-21 12:18:17",
+            "updated_at": "2025-06-21 12:18:17"
+        },
+        {
+            "id": 2,
+            "name": "本鮪中とろ",
+            "price": 160,
+            "image_path": "images\/products\/chu_tro.png",
+            "category_id": 1,
+            "created_at": "2025-06-21 12:18:17",
+            "updated_at": "2025-06-21 12:18:17"
+        },
+        {
+            "id": 3,
+            "name": "とろびんちょう",
+            "price": 100,
+            "image_path": "images\/products\/toro_bincho.png",
+            "category_id": 1,
+            "created_at": "2025-06-21 12:18:17",
+            "updated_at": "2025-06-21 12:18:17"
+        },
+        {
+            "id": 4,
+            "name": "活〆はまち",
+            "price": 100,
+            "image_path": "images\/products\/katu_hamachi.png",
+            "category_id": 2,
+            "created_at": "2025-06-21 12:18:17",
+            "updated_at": "2025-06-21 12:18:17"
+        },
+        {
+            "id": 5,
+            "name": "活〆まだい",
+            "price": 160,
+            "image_path": "images\/products\/katu_madai.png",
+            "category_id": 2,
+            "created_at": "2025-06-21 12:18:17",
+            "updated_at": "2025-06-21 12:18:17"
+        },
+        {
+            "id": 6,
+            "name": "しめさば",
+            "price": 160,
+            "image_path": "images\/products\/sime_sama.png",
+            "category_id": 2,
+            "created_at": "2025-06-21 12:18:17",
+            "updated_at": "2025-06-21 12:18:17"
+        },
+        {
+            "id": 7,
+            "name": "サーモン",
+            "price": 100,
+            "image_path": "images\/products\/salmon.png",
+            "category_id": 4,
+            "created_at": "2025-06-21 12:18:17",
+            "updated_at": "2025-06-21 12:18:17"
+        },
+        {
+            "id": 8,
+            "name": "焼とろサーモン",
+            "price": 160,
+            "image_path": "images\/products\/yaki_toro_salmon.png",
+            "category_id": 4,
+            "created_at": "2025-06-21 12:18:17",
+            "updated_at": "2025-06-21 12:18:17"
+        },
+        {
+            "id": 9,
+            "name": "いくら",
+            "price": 160,
+            "image_path": "images\/products\/ikura.png",
+            "category_id": 6,
+            "created_at": "2025-06-21 12:18:17",
+            "updated_at": "2025-06-21 13:04:38"
+        },
+        {
+            "id": 10,
+            "name": "うに軍艦",
+            "price": 160,
+            "image_path": "images\/products\/uni.png",
+            "category_id": 6,
+            "created_at": "2025-06-21 12:18:17",
+            "updated_at": "2025-06-21 12:18:17"
+        },
+        {
+            "id": 11,
+            "name": "えび",
+            "price": 100,
+            "image_path": "images\/products\/ebi.png",
+            "category_id": 3,
+            "created_at": "2025-06-21 12:18:17",
+            "updated_at": "2025-06-21 12:18:17"
+        },
+        {
+            "id": 12,
+            "name": "甘えび",
+            "price": 100,
+            "image_path": "images\/products\/ama_ebi.png",
+            "category_id": 3,
+            "created_at": "2025-06-21 12:18:17",
+            "updated_at": "2025-06-21 12:18:17"
+        },
+        {
+            "id": 13,
+            "name": "アカイカ",
+            "price": 160,
+            "image_path": "images\/products\/aka_ika.png",
+            "category_id": 5,
+            "created_at": "2025-06-21 12:18:17",
+            "updated_at": "2025-06-21 12:18:17"
+        },
+        {
+            "id": 14,
+            "name": "かつおだしの茶碗蒸し",
+            "price": 190,
+            "image_path": "images\/products\/tyawan_musi.png",
+            "category_id": 7,
+            "created_at": "2025-06-21 12:18:17",
+            "updated_at": "2025-06-21 12:18:17"
+        },
+        {
+            "id": 15,
+            "name": "あおさみそ汁",
+            "price": 120,
+            "image_path": "images\/products\/aosa_misosiru.png",
+            "category_id": 7,
+            "created_at": "2025-06-21 12:18:17",
+            "updated_at": "2025-06-21 12:18:17"
+        },
+        {
+            "id": 16,
+            "name": "カリカリポテト",
+            "price": 220,
+            "image_path": "images\/products\/kari_poteto.png",
+            "category_id": 7,
+            "created_at": "2025-06-21 12:18:17",
+            "updated_at": "2025-06-21 12:18:17"
+        },
+        {
+            "id": 17,
+            "name": " 活〆かんぱち",
+            "price": 160,
+            "image_path": "images\/products\/shime_kanpachi.png",
+            "category_id": 2,
+            "created_at": "2025-06-24 11:53:39",
+            "updated_at": "2025-06-24 12:15:09"
+        },
+        {
+            "id": 18,
+            "name": "漬けまぐろ",
+            "price": 100,
+            "image_path": "images\/products\/dukemaguro.png",
+            "category_id": 1,
+            "created_at": "2025-06-24 12:06:40",
+            "updated_at": "2025-06-24 12:15:06"
+        },
+        {
+            "id": 19,
+            "name": "真いか",
+            "price": 100,
+            "image_path": "images\/products\/maika.png",
+            "category_id": 5,
+            "created_at": "2025-06-24 12:16:57",
+            "updated_at": "2025-06-24 12:16:57"
+        }
+    ]
+}
