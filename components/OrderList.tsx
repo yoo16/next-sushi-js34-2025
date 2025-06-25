@@ -29,8 +29,8 @@ export default function OrderList({ orders, onCheckout }: Props) {
                 )}
             </ul>
             <div className="my-4 text-right text-md font-semibold">
-                合計：0円
-                （税込 0円）
+                合計：{total}円
+                （税込 {totalWithTax}円）
             </div>
             <button
                 className={`block w-full cursor-pointer bg-sky-600 text-white px-6 py-3 rounded text-lg text-center hover:bg-sky-700 transition ${orders.length === 0 ? 'opacity-50 cursor-not-allowed' : ''}`}
