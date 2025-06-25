@@ -22,9 +22,9 @@ export default function ProductCard({ product, onOrder }: Props) {
             </div>
 
             <div className="text-center">
-                <h3 className="text-lg font-bold">xxxxx</h3>
+                <h3 className="text-lg font-bold">{product.name}</h3>
                 <p className="text-md py-4">
-                    000円（税込 000円）
+                    {product.price}円（税込 {priceWithTax}円）
                 </p>
                 <button className="w-full bg-sky-600 hover:bg-sky-700 text-white px-4 py-2 rounded cursor-pointer">注文</button>
             </div>
