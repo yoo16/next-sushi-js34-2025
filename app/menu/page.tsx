@@ -30,7 +30,9 @@ export default function HomePage() {
 
     useEffect(() => {
         (async () => {
+            // カテゴリデータの取得
             const { categories } = await fetchCategories();
+            // 商品データの取得
             const { products } = await fetchProducts();
             setCategories(categories);
             setProducts(products);
