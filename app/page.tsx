@@ -71,7 +71,7 @@ export default function Home() {
 
     return (
         <div className="flex flex-col bg-gradient-to-b from-white to-sky-200 items-center justify-center min-h-screen">
-            <Image src="/site_logo.png" alt="はる寿司" width={500} height={300} className="m-6" />
+            <Image src="/images/site_logo.png" alt="はる寿司" width={500} height={300} className="m-6" />
 
             {visitId > 0 ? (
                 <>
