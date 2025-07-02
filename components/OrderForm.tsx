@@ -52,7 +52,7 @@ export default function Modal({ product, onClose, onConfirm }: Props) {
                     <h2 className="text-xl font-bold mb-2 text-center">{product.name}</h2>
                     <div className="flex justify-center mb-4">
                         {/* PHPのURLにする */}
-                        <img src={imageUrl(product.image_path)} alt="" />
+                        <img src={imageUrl(product.image_path)} className="w-32" />
                     </div>
                     <p className="text-center mb-4">価格: {product.price}円（税込: {priceWithTax}円)</p>
 

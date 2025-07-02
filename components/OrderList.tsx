@@ -1,5 +1,6 @@
 'use client';
 
+import { imageUrl } from "@/lib/image";
 import { Order } from "@/types/Order";
 
 type Props = {
@@ -18,7 +19,8 @@ export default function OrderList({ orders, onCheckout }: Props) {
                 {orders.map((order, index) => (
                     <li key={index} className="flex justify-start items-center mb-2">
                         <div>
-                            <img src={order.image_path} alt="" className="w-12 mr-2"/>
+                            {/* PHPのサーバの画像URLに変換 */}
+                            <img src={imageUrl(order.image_path)} alt="" className="w-12 mr-2"/>
                         </div>
                         <div className="font-bold">{order.name}</div>
                         <span className="ml-auto px-3 py-1 text-white bg-green-500 rounded-full">
