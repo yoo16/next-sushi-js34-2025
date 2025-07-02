@@ -5,6 +5,7 @@ import { Product } from "@/types/Product";
 import { Order } from "@/types/Order";
 import TitleLink from "./TitleLink";
 import { voices } from "@/lib/voiceOptions";
+import { imageUrl } from "@/lib/image";
 
 type Props = {
     product: Product;
@@ -50,7 +51,8 @@ export default function Modal({ product, onClose, onConfirm }: Props) {
                 <div className="bg-white p-6">
                     <h2 className="text-xl font-bold mb-2 text-center">{product.name}</h2>
                     <div className="flex justify-center mb-4">
-                        <img src={product.image_path} alt="" />
+                        {/* PHPのURLにする */}
+                        <img src={imageUrl(product.image_path)} alt="" />
                     </div>
                     <p className="text-center mb-4">価格: {product.price}円（税込: {priceWithTax}円)</p>
 
