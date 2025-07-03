@@ -4,6 +4,9 @@ import TitleLink from "@/components/TitleLink";
 import Link from "next/link";
 
 export default function CompletePage() {
+    // ローカルストレージから visit_id を削除
+    localStorage.removeItem('visit_id');
+
     return (
         <div className="bg-sky-50 text-gray-800 flex items-center justify-center min-h-screen">
             <div className="bg-white p-8 rounded shadow text-center space-y-6 max-w-md">
