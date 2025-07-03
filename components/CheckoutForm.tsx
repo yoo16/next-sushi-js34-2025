@@ -22,7 +22,7 @@ export default function CheckoutModal({ orders, onClose, onComplete }: Props) {
                     <div className="space-y-2 mb-4">
                         {orders.map((order, idx) => (
                             <div key={idx} className="flex justify-between items-center border-b border-gray-300 p-3">
-                                <div>{order.name}</div>
+                                <div>{order.product_name}</div>
                                 <div className="text-gray-600">×{order.quantity}</div>
                             </div>
                         ))}
