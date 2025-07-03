@@ -46,12 +46,15 @@ export default function HomePage() {
     const filtered = products.filter(p => p.category_id === currentCategory?.id);
 
     // オーダーの確定
-    const handleConfirmOrder = (order: Order) => {
-        // ローカルストレージから訪問IDを取得
+    const handleConfirmOrder = async (order: Order) => {
+        // ローカルストレージから訪問ID（数字）を取得
         const visitId = Number(localStorage.getItem('visit_id'));
+        console.log('Visit ID:', visitId);
+        console.log('Order:', order);
 
         // PHP（バックエンド）にオーダーを送信する処理
         const result = await addOrder(visitId, order.product_id, order.quantity);
+        console.log('Order added:', result);
 
         setOrders(prev => [...prev, order]);
         setProduct(undefined);
