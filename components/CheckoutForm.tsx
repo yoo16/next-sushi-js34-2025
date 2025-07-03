@@ -8,7 +8,7 @@ type Props = {
 };
 
 export default function CheckoutModal({ orders, onClose, onComplete }: Props) {
-    const total = orders.reduce((sum, o) => sum + o.quantity * 100, 0); // 仮価格
+    const total = orders.reduce((sum, order) => sum + order.quantity * order.price, 0); // 仮価格計算
     const totalWithTax = Math.round(total * 1.1);
 
     return (
