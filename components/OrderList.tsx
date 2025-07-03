@@ -20,9 +20,9 @@ export default function OrderList({ orders, onCheckout }: Props) {
                     <li key={index} className="flex justify-start items-center mb-2">
                         <div>
                             {/* PHPのサーバの画像URLに変換 */}
-                            <img src={imageUrl(order.image_path)} alt="" className="w-12 mr-2"/>
+                            <img src={imageUrl(order.product_image_path)} alt="" className="w-12 mr-2"/>
                         </div>
-                        <div className="font-bold">{order.name}</div>
+                        <div className="font-bold">{order.product_name}</div>
                         <span className="ml-auto px-3 py-1 text-white bg-green-500 rounded-full">
                             {order.quantity}
                         </span>
