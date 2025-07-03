@@ -21,11 +21,11 @@ export default function Modal({ product, onClose, onConfirm }: Props) {
 
     const handleConfirm = () => {
         const order: Order = {
-            id: product.id,
-            name: product.name,
+            product_id: product.id,
             price: product.price,
-            image_path: product.image_path,
             quantity,
+            product_name: product.name,
+            product_image_path: product.image_path,
         };
 
         // 注文処理
