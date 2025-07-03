@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { fetchCategories, fetchProducts } from '@/lib/api';
+import { addOrder, fetchCategories, fetchProducts } from '@/lib/api';
 
 import { useRouter } from 'next/navigation';
 
@@ -47,6 +47,12 @@ export default function HomePage() {
 
     // オーダーの確定
     const handleConfirmOrder = (order: Order) => {
+        // ローカルストレージから訪問IDを取得
+        const visitId = Number(localStorage.getItem('visit_id'));
+
+        // PHP（バックエンド）にオーダーを送信する処理
+        const result = await addOrder(visitId, order.product_id, order.quantity);
+
         setOrders(prev => [...prev, order]);
         setProduct(undefined);
     };
